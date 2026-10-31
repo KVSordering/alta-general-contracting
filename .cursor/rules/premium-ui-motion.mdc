@@ -1,0 +1,10 @@
+---
+description: Keep motion purposeful, accessible, and checked on real screen sizes.
+alwaysApply: true
+---
+
+# Premium UI and motion
+
+Prefer native CSS for small interactions. Do not scroll-jack. Honor `prefers-reduced-motion`, keyboard focus, and touch.
+
+Motion that belongs: image reveals, navigation, project hover, and form or calendar feedback. Check the hero, services, quote form, menu, and footer on desktop and a narrow screen before calling a visual change done.

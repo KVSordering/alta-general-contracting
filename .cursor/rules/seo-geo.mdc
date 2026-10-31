@@ -1,0 +1,12 @@
+---
+description: Keep local SEO and GEO factual, crawlable, and free of invented business data.
+alwaysApply: true
+---
+
+# SEO and GEO
+
+Canonical host is https://www.altagc.ca. Identity stays consistent: Alta General Contracting Ltd., 8606 Yellowhead Trail NW, Edmonton, AB T5B 1G1, 780-965-9595, info@altagc.ca, established 1999, Facebook page already on the site.
+
+Do not invent office hours, service cities, credentials, analytics IDs, or Search Console tokens. Site-visit windows on the quote form are not published office hours. Do not add a star rating. The 2 year warranty is the only warranty claim.
+
+Keep JSON-LD in the HTML as GeneralContractor, plus BreadcrumbList and Service or FAQPage only where that content is visible. Unique titles and descriptions, sitemap.xml, and robots.txt stay in sync with real pages. No doorway city pages. llms.txt, if edited, stays limited to verified facts.
