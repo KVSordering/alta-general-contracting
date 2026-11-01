@@ -1,4 +1,15 @@
 (function () {
+  if (location.hostname.endsWith("github.io")) {
+    var bar = document.createElement("div");
+    bar.className = "preview-bar";
+    bar.innerHTML = "Design preview for Alta General Contracting Ltd. The public site is still <a href=\"https://www.altagc.ca\">www.altagc.ca</a>. This page does not take payment.";
+    document.body.insertBefore(bar, document.body.firstChild);
+    var meta = document.createElement("meta");
+    meta.name = "robots";
+    meta.content = "noindex";
+    document.head.appendChild(meta);
+  }
+
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.querySelector(".site-nav");
   if (toggle && nav) {

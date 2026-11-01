@@ -105,6 +105,19 @@ textarea {
   border-bottom: 1px solid var(--line);
 }
 
+.preview-bar {
+  padding: 0.55rem 1.25rem;
+  background: var(--ink);
+  color: var(--cream);
+  text-align: center;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.preview-bar a {
+  color: #e7d3b0;
+}
+
 .header-inner {
   max-width: 1440px;
   margin: 0 auto;
@@ -447,6 +460,10 @@ textarea {
   max-width: 58ch;
 }
 
+.prose p {
+  max-width: none;
+}
+
 h2,
 h3 {
   font-family: var(--serif);
@@ -592,7 +609,7 @@ h3 {
 
 .quote blockquote {
   margin: 0;
-  max-width: 46rem;
+  max-width: none;
   font-family: var(--serif);
   font-weight: 460;
   font-size: clamp(1.45rem, 2.2vw, 1.85rem);
@@ -746,7 +763,7 @@ h3 {
 .faq-list {
   display: grid;
   gap: 1.4rem;
-  max-width: 68ch;
+  max-width: none;
   margin: 2rem 0 0;
 }
 
@@ -780,6 +797,30 @@ h3 {
   font-size: 1.35rem;
   font-family: var(--serif);
   letter-spacing: -0.02em;
+}
+
+.scope {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 2.5rem;
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.scope a {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--serif);
+  font-size: 1.28rem;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  text-decoration: none;
+  color: inherit;
+}
+
+.scope a:hover,
+.scope a:focus-visible {
+  color: var(--brass);
 }
 
 .sectors {
@@ -1387,6 +1428,11 @@ form {
   .services,
   .proof {
     grid-template-columns: 1fr;
+  }
+
+  .scope {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1.25rem;
   }
 
   .services a,

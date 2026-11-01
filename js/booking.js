@@ -232,6 +232,10 @@
         renderCalendar();
       })
       .catch(function () {
+        if (location.hostname.endsWith("github.io")) {
+          setStatus("This preview can’t hold a time. Call 780-965-9595, or send the quote instead.");
+          return;
+        }
         setStatus("The schedule is unavailable right now. Call 780-965-9595.");
       });
   }
